@@ -1,0 +1,157 @@
+*, 
+*::after, 
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all .4s ease;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-color: black;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  padding: 10px 24px;
+  width: 50%;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.tags {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tags a {
+  padding: 10px;
+}
+
+.service {
+  padding: 10px 8px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service .content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  text-align: justify;
+}
+
+.service .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.service .sale {
+  font-size: 14px;
+  color: tomato;
+}
+
+.service .price {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  gap: 8px;
+}
+
+.service a {
+  border-bottom: 1px solid transparent;
+  transition: all .4s ease;
+}
+
+.service a:hover {
+  border-color: black;
+}
+
+.single {
+  margin-top: 20px;
+}
+
+.single .service {
+  margin-top: 20px;
+  border: none;
+  flex-direction: row;
+  padding: 0;
+  gap: 20px;
+}
+
+.single h2 {
+  margin-bottom: 10px;
+}
+
+.single ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: gray;
+}
+
+.single li {
+  display: flex;
+  gap: 8px;
+}
+
+.single .right-section {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
